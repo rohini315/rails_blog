@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <nav>
+    <% if session[:user_id] %>
+      <div id="nav_sign_in">
+        
+        <%= link_to 'Home', users_path %>
+        <%= link_to 'All Posts', posts_path %>
+        <%= link_to 'New Post', new_post_path %>
+        <%= link_to 'Sign Out', users_signout_path %>
+       
+      </div>
+    <% else %>
+      <div id="nav_sign_out">
+        <p>
+         <%= link_to 'Home', users_path %>
+         <%= link_to 'Sign In', users_signinform_path %>
+        <%= link_to 'Sign Up', new_user_path %>
+        </p>
+      </div>
+    <% end %>
+  </nav>
+
+    <div id="notice"><%= flash[:notice] if flash[:notice] %></div>
+    <%= flash[:error] if flash[:error] %>
+    <%= flash[:alert] if flash[:alert] %>
+   
+<%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+
+  <div id="user_post">
+    <%= @post.body %>
+  </div>
+
+  <div id="comments">
+      <h4>
+        <%= @post.comments.count %> 
+        <% if @post.comments.count == 1 %>
+          Comment 
+        <% else %>
+          Comments
+        <% end %>
+      </h4>
+  </div>
+  
+  <div id="comments_wrapper">
+
+  <div id="create_comment">
+      <%= render @post.comments %>
+      <h3> Comment </h3>
+      <%= render "comments/form" %> 
+  </div>
+</div>

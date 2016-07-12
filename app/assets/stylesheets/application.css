@@ -1,0 +1,262 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+body {
+	font-family: 'Raleway', sans-serif;;
+	background-color: #FFCBD3;
+}
+ /*==========================Landing Page=================*/
+nav {
+	font-size: 20px;
+}
+nav a {
+	padding-right: 20px ;
+	color: white;
+	text-decoration: none;
+}
+
+a:visited {
+	color: white;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#welcome {
+	text-align: center;
+	color: white;
+	font-size: 60px;
+}
+
+#wrapper {
+width:850px;
+height:400px;
+padding-top: 40px;
+margin: 0 auto;
+}
+
+img {
+	width: 250px;
+	height: 250px;
+}
+
+
+ul.box, ul.box2, ul.box3, ul.box4 {
+position: relative;
+z-index: 1; 
+overflow: hidden;
+list-style: none;
+margin: 0;
+padding: 0; }
+
+
+ul.box li, ul.box2 li, ul.box3 li, ul.box4 li {
+position: relative;
+float: left;
+margin: 0 30px 30px 0;
+}
+/*==========================Sign in Pg=================*/
+
+:focus{ outline: none;
+	color: white;
+	
+}
+
+#sign_in_form {
+	width: 400px;
+	height: 300px;
+	color: white;
+	text-align: center;
+	padding-top: 15px;
+	margin: 0 auto;
+	margin-top: 20px;
+
+}
+
+#username, #password {
+	background-color: #FFCBD3;
+	border-color: white;
+	border-style: solid;
+	border-width: 3px;
+	border-right:none;
+	border-top:none;
+	border-left: none;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 20px;
+	text-align: center;
+}
+
+#password{
+	margin-bottom: 60px;
+}
+
+input {
+	background-color: #FFCBD3;
+	border-style: solid;
+	border-color: white;
+	color: white;
+	font-size: 20px;
+	width: 150px;
+	padding: 10px;
+	margin-bottom: 40px;
+	
+}
+
+input:hover {
+	width: 180px;
+
+}
+
+label {
+	font-size: 30px;
+	margin-top: 20px;
+}
+
+#jp img {
+	width: 100px;
+	height: 100px;
+}
+
+#jp {
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+/*==========================Profile pg=================*/
+
+#name_heading{
+	text-align: center;
+	color: white;
+	font-size: 80px;
+	margin-top: 100px;
+}
+
+#notice {
+	color: white;
+	text-align: center;
+	font-size: 30px;
+}
+
+/*==========================Posts pg=================*/
+#posts_heading{
+	text-align: center;
+	color: white;
+	margin-top: 100px;
+}
+
+#post_wrapper{
+	width: 450px;
+	margin: 0 auto;
+	margin-top: 70px;
+}
+
+#post_body{
+	width: 450px;
+	height: 200px;
+}
+
+/*========================== AllPosts pg=================*/
+
+#all_posts{
+	text-align: center;
+	color: white;
+	font-size: 40px;
+	margin-bottom: 90px;
+}
+
+#show_post{
+	text-align: center;
+	color: white;
+	text-decoration: bold;
+	font-size: 30px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+#posts{
+	color: white;
+	font-size: 20px;
+	text-align: center;
+
+}
+
+#created{
+	margin-top: 5px;
+	color: white;
+	font-size: 13px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+/*========================== Comments pg=================*/
+
+#user_post{
+	color: white;
+	text-align: center;
+	margin-top: 100px;
+	font-size: 20px;
+	text-decoration: underline
+}
+
+#comments {
+	color: white;
+	text-align: center;
+	font-size: 10px;
+
+}
+
+h3 {
+	color: white;
+	text-align: center;
+	font-size: 25px;
+	margin-top: 50px;
+}
+
+.comment_body{
+	color: gray;
+	text-align: center;
+	text-decoration: bold;
+	font-size: 20px;
+}
+
+.comment_time{
+	color: gray;
+	text-align: center;
+	font-size: 10px;
+}
+
+.button {
+	text-align: center;
+	color: white;
+	width: 100px;
+	margin: 0 auto;
+}
+
+#del {
+	width: 60px;
+	margin: 0 auto;
+}
+
+#comments_wrapper{
+	width: 200px;
+	margin: 0 auto;
+	margin-top: 70px;
+}
+
+#comment_body{
+	width: 200px;
+	height: 100px;
+	background-color:#FFCBD3;
+	border-style: solid;
+	border-color: white;
+	border-width: 3px;
+
+}
+
+#sub input{
+	width: 150px;
+	font-size: 15px;
+	margin: 0 auto;
+}

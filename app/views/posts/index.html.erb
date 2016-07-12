@@ -1,0 +1,14 @@
+<h1 id="all_posts">What's The Deal?</h1>
+<% @posts.reverse.each do |post| %>
+	<div id= "show_post"> 
+		<%= post.user.name %>
+	</div>
+
+	<div id="posts">
+		<%= link_to post.body, post %><br>
+	</div>
+
+	<div id="created">
+		Created at:<%= post.created_at %>
+	</div>
+<% end %>

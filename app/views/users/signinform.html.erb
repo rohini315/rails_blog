@@ -1,0 +1,12 @@
+<div id="jp"> 
+<img src="https://raspberryjewels.files.wordpress.com/2016/04/039.gif?w=200&h=200">
+</div>
+<div id="sign_in_form">
+<%= form_tag("/users/signin", method: "post") do %>
+  <%= label_tag(:username, "USERNAME:")  %> <br>
+  <%= text_field_tag(:username) %><br>
+  <%= label_tag(:password, "PASSWORD:") %><br>
+  <%= password_field_tag(:password) %><br>
+  <%= submit_tag("SUBMIT") %>
+<% end %>
+</div>
